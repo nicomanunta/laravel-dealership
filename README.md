@@ -1,17 +1,25 @@
-Buongiorno,
-Sono molto contento che siamo arrivati alla fase di sviluppo del gestionale.
-Come concordato in predecenza, lascio qui i requisiti per la creazione del gestionale di macchine della mia concessionaria.
-Nel gestionale dovrà essere possibile aggiungere, modificare ed eliminare le macchine.
-Ogni macchina avrà oltre il suo prezzo, marca e modello, anche le sue specifiche tecniche.
-É importante per noi però avere anche la possibilità di gestire alcune informazioni specifiche per le case automobilistiche, tipo il loro numero di telefono o la tipologia di macchine che producono.
-Per ogni macchina saranno anche disponibili uno o più optionals, come per esempio "aria condizionata", "autoradio", etc.
-Ogni optional ha un suo prezzo. Ogni optional può essere aggiunto a più macchine.
-Il prezzo della macchina da mostrare non sarà solamente il prezzo della macchina, ma sarà la somma del prezzo della macchina e di tutti gli optionals aggiunti alla macchina.
-Ovviamente per poter aggiungere o modificare qualsiasi dato bisogna essere loggato.
-Spero che ho fornito abbastanza informazioni per lo sviluppo del gestionale.
-Resto a disposizione per qualsiasi chiarimento.
-Saluti,
-Guido Piano
+# Gestionale Back-end per Concessionaria di Automobili
 
-Team 6:
-Dario Lo Forti, Nicolò Manunta, Nazariy Hereha, Luca Formica
+Questo progetto è un sistema di gestione back-end sviluppato per un sito web di una concessionaria di automobili, progettato per gestire sia automobili nuove che usate. Il sistema fornisce funzionalità avanzate per la gestione del inventario.
+
+## Tecnologie Utilizzate
+
+- **PHP**
+- **Laravel**
+- **HTML**
+- **SCSS**
+
+## Funzionalità Principali
+
+- Gestione dell'inventario: Aggiunta, modifica e eliminazione di automobili nel database, inclusi dettagli come modello, anno di produzione, prezzo e altro ancora.
+
+## Installazione e Configurazione
+
+1. Clona il repository sul tuo sistema locale.
+2. Assicurati di avere PHP e Composer installati sul tuo sistema.
+3. Esegui `composer install` per installare le dipendenze del progetto.
+4. Copia il file `.env.example` in un nuovo file chiamato `.env` e imposta le variabili d'ambiente necessarie come il database e le credenziali SMTP.
+5. Esegui `php artisan key:generate` per generare la chiave dell'applicazione.
+6. Esegui `php artisan migrate` per eseguire le migrazioni del database.
+7. Avvia il server locale utilizzando `php artisan serve`.
+8. Accedi al sistema tramite il tuo browser all'indirizzo `http://localhost:8000`.
